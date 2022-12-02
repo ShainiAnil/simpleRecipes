@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+
+    <div class="appWrapper">
+      <div class="appHeader">
+        <div class="appLogo">
+          <a href="/"><h1>Recipes</h1></a>
+          <p>Find recipes from around the world</p>
+        </div>
+      </div>
+      <div class="appSearch">
+        <form class="searchField">
+          <input
+            type="text"
+            required
+            placeholder="Find Recipes"
+            name="recipeSearch"
+            class="recipeSearch"
+          />
+          <button class="searchButton">
+            <img src="./assets/search.svg" alt="search" />
+          </button>
+         </form>
+       </div>
+        <!-- Category List  -->
+        <ul class="categoryList">
+        </ul> 
+        
+      <div class="appMain">
+        <div class="recipeList">
+          <div class="splash">
+            <img src="./assets/splash.svg" alt="" />
+          </div>
+          <!-- <div class="recipeItem" data-id="5465">
+            <div class="recipePic">
+              <img
+                src="https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <h2>Ceaser Salad</h2>
+            <h4>Chicken</h4>
+          </div> -->
+        </div>
+      </div>
+      <div class="appFooter">
+        <p>Recipe App built with HTML, CSS and JS</p>
+      </div>
+    </div>
+
+    <div class="appModal">   
+      <div class="modalWrapper">
+        <button class="modalClose">
+            <img width="36" src="./assets/close.svg" alt="">
+        </button>
+        <div class="mealTitle"></div>
+        <div class="mealPic"></div>
+        <div class="mealInfo">
+          <h3>Ingredients</h3>
+          <div class="mealIngredients"></div>
+          <h3>Instructions</h3>
+          <div class="mealInstructions"></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
